@@ -69,7 +69,6 @@ document.addEventListener('mousemove', (event) => {
   document.body.style.backgroundPosition = `${50 + moveX}% ${50 + moveY}%`;
 });
 
-// Autoplay music
 const audio = document.getElementById('bg-music');
 function tryPlay() {
   audio.play().catch(() => {
