@@ -7,7 +7,7 @@ const texts = [
     'UI Designer',
     'Web Developer',
     'Szef Szefow',
-    'Ye'
+    'Yeee'
 ];
 let textIndex = 0;
 let charIndex = 0;
