@@ -9,14 +9,19 @@
 </head>
 <body>
 
-<div id="intro" onclick="enterSite()"><div id="intro-text">click to enter...</div></div>
-<audio id="bg-music" src="music.mp3" loop preload="auto"></audio>
+<audio id="bg-music" src="music.mp3" loop preload="none"></audio>
+
+<div id="intro-overlay" onclick="enterSite()">
+    <div id="intro-bg"></div>
+    <canvas id="intro-canvas"></canvas>
+    <div id="intro-text">click to enter...</div>
+</div>
 
 <div class="container">
     <div class="rectangle">
         <div class="avatar-section">
             <div class="avatar">
-                <img src="avatar.png" alt="Avatar">
+                <img src="avatar.png" alt="Avatar" loading="eager">
             </div>
             <div class="info">
                 <h2 class="name">Mejszu</h2>
