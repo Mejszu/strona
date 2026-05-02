@@ -163,3 +163,38 @@ body {
   .name { font-size: 24px; }
   .description { font-size: 18px; }
 }
+
+#intro {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: url('background.gif') no-repeat center center/cover;
+    filter: blur(6px) brightness(0.6);
+    cursor: pointer;
+}
+
+#intro::after {
+    content: '';
+}
+
+#intro-text {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.3em;
+    text-transform: lowercase;
+    pointer-events: none;
+    animation: pulse 2s ease-in-out infinite;
+    filter: none;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}

@@ -77,3 +77,18 @@ function tryPlay() {
   });
 }
 tryPlay();
+
+function enterSite() {
+    const intro = document.getElementById('intro');
+    const introText = document.getElementById('intro-text');
+    intro.style.transition = 'opacity 0.8s ease';
+    introText.style.transition = 'opacity 0.8s ease';
+    intro.style.opacity = '0';
+    introText.style.opacity = '0';
+    setTimeout(() => {
+        intro.style.display = 'none';
+        introText.style.display = 'none';
+    }, 800);
+    const audio = document.getElementById('bg-music');
+    audio.play().catch(() => {});
+}
